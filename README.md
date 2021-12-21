@@ -6,7 +6,7 @@ QMKのキーマップを管理する。手順は下記の通り:
 - [yq cli](https://github.com/mikefarah/yq)により、YAMLをJSONに変換する。
 
 ```shell script
-cat ./my_ergodash_keymap.yaml | yq e -oj > ./my_ergodash_keymap.json
+cat ./ergodash_keymap.yaml | yq e -oj > ./ergodash_keymap.json
 ```
 
 - [QMK Configurator](https://config.qmk.fm/)でJSONからhexに変換する。
