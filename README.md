@@ -1,19 +1,17 @@
 # QMK settings
 
-- yq <https://github.com/mikefarah/yq>
-- QMK toolbox <https://github.com/qmk/qmk_toolbox>
-- QMK Configurator <https://config.qmk.fm/>
+QMKのキーマップを管理する。手順は下記の通り:
 
-YAMLで書いたkeymapをGit管理する。
-yqコマンドにより、YAMLをJSONに変換する。
+- YAMLで書いたkeymapをGit管理しておく。
+- [yq cli](https://github.com/mikefarah/yq)により、YAMLをJSONに変換する。
 
 ```shell script
 cat ./my_ergodash_keymap.yaml | yq e -oj > ./my_ergodash_keymap.json
 ```
 
-QMK ConfiguratorでJSONからhexに変換する。
-QMK toolboxでファームウェアを書き込む。
-左右のキーボードを片方ずつ焼く必要があることに注意すること。
+- [QMK Configurator](https://config.qmk.fm/)でJSONからhexに変換する。
+- [QMK toolbox](https://github.com/qmk/qmk_toolbox)でファームウェアを書き込む。
+  - 左右のキーボードを片方ずつ焼く必要があることに注意すること。
 
 ## Why
 
