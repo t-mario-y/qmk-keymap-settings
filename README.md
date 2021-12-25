@@ -43,8 +43,3 @@ QMKによるキーマップカスタマイズは奥深く、自作キーボー�
     - prettierをかけると配列項目が問答無用で改行され、コメントや項目ごとの改行無視を仕込むことができない。
 
 以上のことから、キーバインドをYAMLで記述し、QMK configuratorとのやりとりはJSONに変換して行うことが最もコンパクトな管理につながると考えた。
-
-qmk_firmware リポジトリは現状は残しておくが、二重管理になるためいずれ消去したい。
-
-Ergodashのkeymapは <https://github.com/t-mario-y/qmk_firmware/blob/master/keyboards/ergodash/rev1/keymaps/t-mario-y/keymap.c>  
-Manta60のkeymapは <https://github.com/t-mario-y/qmk_firmware/blob/master/keyboards/manta60/keymaps/t-mario-y/keymap.c>  
