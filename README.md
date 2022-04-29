@@ -6,7 +6,7 @@ QMKのキーマップを管理する。手順は下記の通り:
 - [yq cli](https://github.com/mikefarah/yq)により、YAMLをJSONに変換する。
 
 ```shell script
-cat ./ergodash_keymap.yaml | yq e -oj > ./ergodash_keymap.json
+yq e ./ergodash_keymap.yaml --output-format=json > ./ergodash_keymap.json
 ```
 
 - [QMK Configurator](https://config.qmk.fm/)でJSONからhexに変換する。
@@ -30,7 +30,7 @@ QMKによるキーマップカスタマイズは奥深く、自作キーボー�
   - 例えば、tap dance(2連打で別のキーコード割当)はQMK configuratorで設定できないことが知られている。その他の制約は[サリチル酸さんのブログ](https://salicylic-acid3.hatenablog.com/entry/qmk-configurator)を参照のこと
 - ☠️CLIのセットアップに際してPCのパッケージ管理が難しい。
   - ただ設定を管理するだけなのに、あらゆるキーボードの設定が詰まったqmkリポジトリを自分でフォークした上で、依存関係が大量に含まれるQMK CLIをbrew installする必要がある。
-  - dockerコンテナによる起動も試されているが、そもそも入力デバイスに対して書き込みを行うという性質上、コンテナ上で動作するアプリケーションでは難しい。参考: [Why can't I flash on Windows/macOS](https://beta.docs.qmk.fm/using-qmk/guides/development-environments/getting_started_docker#why-cant-i-flash-on-windows-macos)(Linuxだとスっと動くようだ。)
+  - dockerコンテナによる起動も試されているが、そもそも入力デバイスに対して書き込みを行うという性質上、コンテナ上で動作するアプリケーションでは容易ではなさそう。参考: [Why can't I flash on Windows/macOS]https://docs.qmk.fm/#/getting_started_docker?id=why-cant-i-flash-on-windowsmacos)
 
 ### QMK toolbox + QMK configurator
 
