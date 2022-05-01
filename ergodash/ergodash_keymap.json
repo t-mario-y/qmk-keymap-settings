@@ -1,7 +1,7 @@
 {
   "version": 1,
   "keyboard": "ergodash/rev1",
-  "keymap": "t-mario-y keymap",
+  "keymap": "t-mario-y",
   "layout": "LAYOUT_4key_2u_inner",
   "layers": [
     [
