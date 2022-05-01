@@ -16,6 +16,7 @@ yq e ./ergodash_keymap.yaml --output-format=json > ./ergodash_keymap.json
 - [QMK Configurator](https://config.qmk.fm/)でJSONからhexに変換する。
 - [QMK toolbox](https://github.com/qmk/qmk_toolbox)でファームウェアを書き込む。
   - 左右のキーボードを片方ずつ焼く必要があることに注意すること。
+  - 0.2.0では書き込めず、0.1.1に落とす必要があった。
 
 ## Why
 
